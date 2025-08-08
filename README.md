@@ -43,20 +43,46 @@ personal-website/
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm (Node Package Manager)
+Before you begin, ensure you have the following installed:
+- **Node.js** (v16 or higher) - [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Git** - [Download here](https://git-scm.com/)
+
+To verify your installations:
+```bash
+node --version  # Should show v16.x.x or higher
+npm --version   # Should show 8.x.x or higher
+git --version   # Should show git version
+```
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
+# Using SSH (recommended if you have SSH keys set up)
 git clone git@github.com:fzhangzheng/personal-website.git
+
+# OR using HTTPS
+git clone https://github.com/fzhangzheng/personal-website.git
+
+# Navigate to the project directory
 cd personal-website
 ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 npm install
+```
+
+3. **Set up your personal content:**
+   - Replace `img/profile_picture.jpg` with your own profile picture
+   - Add your resume as `files/resume.pdf`
+   - Update contact information in `index.html`
+
+4. **Build the project:**
+```bash
+# Build both server and client files
+npm run build
 ```
 
 ### Building the Project
