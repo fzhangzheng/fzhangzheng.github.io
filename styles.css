@@ -181,23 +181,33 @@ body {
 
 /* Mobile timeline styles */
 @media (max-width: 768px) {
+  /* Hide the timeline line */
   .timeline::before {
-    left: 30px;
+    display: none;
+  }
+  
+  /* Remove timeline-specific positioning */
+  .timeline {
+    padding: 10px 0;
   }
   
   .timeline-item {
-    flex-direction: row !important;
-    margin: 30px 0;
+    flex-direction: column !important;
+    margin: 20px auto;
+    display: block;
   }
   
+  /* Hide the blue dots/markers */
   .timeline-marker {
-    left: 30px;
+    display: none;
   }
   
+  /* Make timeline content full width cards */
   .timeline-content {
-    width: calc(100% - 50px);
-    margin-left: 50px;
-    margin-right: 20px;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto 20px auto !important;
+    display: block;
   }
   
   .timeline-content h4 {
